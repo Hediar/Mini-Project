@@ -162,14 +162,20 @@
           /* 기존 상태에서는 보이지 않게 */
           display: none;
         }
+
         .mycards {
           padding: 23px;
+        }
+        /* 이미지 크기 조정 */
+        .card-img-top {
+          height: 15rem;
+          object-fit: cover;
         }
         .card-text {
           color: gray;
         }
 
-        /* 사진 위에 마우스 올릴 때 */
+        /* 카드 위에 마우스 올릴 때 */
         .col:hover {
           transform: scale(1.03);
           cursor:pointer;
@@ -177,6 +183,7 @@
         .card-footer {
           display: none;
         }
+
       </style>
   </head> 
   <body> 
