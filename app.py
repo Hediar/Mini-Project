@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, jsonify
 import requests
 from bs4 import BeautifulSoup
 client = MongoClient(
-    'mongodb+srv://my_atlas_user:wldac0560!@cluster0.4ytaf.mongodb.net/?retryWrites=true&w=majority')
+    '')
 db = client.dbsparta
 
 
