@@ -43,9 +43,26 @@
               let image = a["image"];
               let title = a["title"];
               let star = a["star"];
+              let category = a["category"];
 
-              let data_num = index
+              let data_num = index;
               let star_repeat = "⭐".repeat(star);
+              let ca_key = '';
+              if (category == 1){
+                ca_key = '한식';
+              }
+              else if (category == 2) {
+                ca_key = '양식';
+              }
+              else if (category == 3) {
+                ca_key = '중식';
+              }
+              else if (category == 4) {
+                ca_key = '분식';
+              }
+              else if (category == 5) {
+                ca_key = '카페';
+              }
 
               let information_html = '';
                 information.forEach((info) => {
@@ -62,7 +79,10 @@
                                 <div class="card h-100">
                                   <img src="${image}" class="card-img-top" id="${data_num}">
                                   <div class="card-body">
-                                    <h5 class="card-title">${title}</h5>
+                                    <div class="main-title">
+                                      <h5 class="card-title">${title}</h5>
+                                      <h5 class="category">${ca_key}</h5>
+                                    </div>
                                     <p class="card-text">${comment}</p>
                                     <p>${star_repeat}</p>
                                   </div>
@@ -103,7 +123,7 @@
       }
     </script>
 
-    <title>음식 추천 서비스</title>
+    <title>맛집 찾기</title>
     <!-- Falsk 사용 시 -->
       <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"> -->
 
@@ -166,6 +186,14 @@
         .mycards {
           padding: 23px;
         }
+        /* .main-title {
+          display: inline-block;
+        } */
+        .category {
+          float: right;
+          color: #ff7100;
+        }
+        
         /* 이미지 크기 조정 */
         .card-img-top {
           height: 15rem;
@@ -184,11 +212,12 @@
           display: none;
         }
 
+
       </style>
   </head> 
   <body> 
     <div class="banner"> 
-      <h1>음식 추천 서비스</h1> 
+      <h1>맛집 찾기</h1> 
       <div class="btn_main"> 
         <button type="button" onclick="open_box()">기록하기</button> 
         <button type="button" onclick="sort_food()">별점순 정렬</button> 
@@ -202,7 +231,7 @@
           class="form-control" 
           placeholder="name@example.com" 
         />
-        <label>음식URL</label>
+        <label>망고 플레이트 식당URL</label>
       </div>
       <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">별점</label>
