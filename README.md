@@ -1,6 +1,8 @@
 # 프로젝트 소개
 
-이 프로젝트는 망고 플레이트 URL을 기반으로 사용자들이 코멘트를 남길 수 있는 웹사이트를 개발한 것입니다. 아래는 프로젝트의 스크린샷입니다.
+망고 플레이트 URL을 기반으로 사용자들이 코멘트를 남길 수 있는 웹사이트 
+
+<img width="706" alt="image" src="https://github.com/Hediar/Mini-Project/assets/72387948/d6828dbb-02b8-46d5-9df9-f75f15c3212d">
 
 ![프로젝트 스크린샷](https://github.com/Hediar/Mini-Project/assets/72387948/e16d52de-269f-4d61-8eb7-e57d82dc1fc8)
 
