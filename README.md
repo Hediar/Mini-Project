@@ -4,13 +4,18 @@
 <img width="743" alt="image" src="https://github.com/Hediar/Mini-Project/assets/72387948/c2b24b3c-ed6f-41da-9129-260e64fea51c">
 
 ## Stacks
-Python(flask), HTML, CSS, JS(Jquery)
 <img alt="Python" src ="https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"/>
-<img alt="Flask" src ="https://img.shields.io/badge/기술명-원하는색상코드.svg?&style=for-the-badge&logo=로고명&logoColor=로고색상"/>
+
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+
 ![HTML](https://img.shields.io/badge/HTML-5F00FF?style=for-the-badge&logo=html5&logoColor=white)
+
 ![CSS3](https://img.shields.io/badge/CSS3-007ACC?style=for-the-badge&logo=css3&logoColor=white)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## 실행방법
