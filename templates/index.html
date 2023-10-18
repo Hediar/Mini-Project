@@ -14,6 +14,8 @@
       $(document).ready(function () {
         listing();
         open_information();
+
+        
       });
 
       function open_box(){
@@ -84,7 +86,7 @@
                                       <h5 class="category">${ca_key}</h5>
                                     </div>
                                     <p class="card-text">${comment}</p>
-                                    <p>${star_repeat}</p>
+                                    <p id="${star}">${star_repeat}</p>
                                   </div>
                                   <div class="card-footer">
                                     <small class="text-muted">${information_html}</small>
@@ -94,6 +96,7 @@
 
               $("#cards-box").append(temp_html);
             });
+
           });
       }
 
@@ -118,9 +121,12 @@
         });
       }
 
-      function sort_food(){
-        // 별점 순 정렬하기 
+      function sort_star() {
+        $('#sort-by-star').on('click', function() {
+
+        })
       }
+
     </script>
 
     <title>맛집 찾기</title>
@@ -220,7 +226,7 @@
       <h1>맛집 찾기</h1> 
       <div class="btn_main"> 
         <button type="button" onclick="open_box()">기록하기</button> 
-        <button type="button" onclick="sort_food()">별점순 정렬</button> 
+        <button type="button" id="sort-by-star">별점순 정렬</button> 
       </div> 
     </div> 
     <div class="mypost" id="post-box"> 

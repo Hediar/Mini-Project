@@ -2,8 +2,11 @@ from pymongo import MongoClient
 from flask import Flask, render_template, request, jsonify
 import requests
 from bs4 import BeautifulSoup
-client = MongoClient(
-    '')
+from decouple import config
+
+MONGO_URI = config('MONGO_URI')
+
+client = MongoClient(MONGO_URI)
 db = client.dbsparta
 
 
@@ -16,7 +19,6 @@ def home():
     return render_template('index.html')
 
 # POST
-
 
 @app.route("/food", methods=["POST"])
 def food_post():
@@ -55,12 +57,11 @@ def food_post():
             th: td,
         })
 
-    print(doc)
+    # print(doc)
     db.food.insert_one(doc)
     return jsonify({'msg': '저장 완료!'})
 
 # GET
-
 
 @app.route("/food", methods=["GET"])
 def food_get():
